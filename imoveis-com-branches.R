@@ -4,3 +4,7 @@ dados <- read.csv("imoveis.csv")
 # 2. Gráficos
 
 # 3. Medidas
+media_imposto <- mean(dados$imposto, na.rm = TRUE)
+mediana_imposto <- median(dados$imposto, na.rm = TRUE)
+dp_imposto <- sd(dados$imposto, na.rm = TRUE)
+cat("Média:", media_imposto, "\nMediana:", mediana_imposto, "\nDesvio Padrão:", dp_imposto)
